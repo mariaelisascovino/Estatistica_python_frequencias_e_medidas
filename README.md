@@ -61,19 +61,19 @@ Amplitude= Valor Máximo - Valor Mínimo
 
 df com nulos=0
 
-![amplitude_0](https://github.com/user-attachments/assets/2334f297-d15b-4acb-868c-59a68b21efa8)
+![amplitude_0](https://github.com/user-attachments/assets/8dd3ecc1-7452-4b3a-84c6-afd1277ed4fa)
 
 df com nulos excluídos
 
-![amplitude_sem_nulos](https://github.com/user-attachments/assets/45aea167-4bd4-418c-b311-44a34ca3da49)
+![amplitude_sem_nulos](https://github.com/user-attachments/assets/7544daea-dadf-422f-b8f5-fa4d0acc9485)
 
 df com nulos =mediana
 
-![amplitude_mediana](https://github.com/user-attachments/assets/65024ef8-3805-44dd-bff5-234a72acdeb8)
+![amplitude_mediana](https://github.com/user-attachments/assets/bb72f7d2-d20b-49ca-b5c9-c5e5ca178f40)
 
 A amplitude entre os valores mínimos e máximos é maior para a disciplina de Redação, indicando uma maior variação das notas dos candidatos nessa disciplina. As disciplinas de Matemática, Linguagens e Ciências da Natureza apresentam amplitudes intermediárias e a de Ciências Humanas possui a menor amplitude, sugerindo uma menor variação nos escores dos candidatos. 
 
-MEDIA 
+MÉDIA 
 
 A média é uma medida estatística que representa o valor central de um conjunto de dados. 
 
@@ -99,20 +99,21 @@ A moda é uma medida estatística que representa o valor ou valores que aparecem
 
 df nulos=0
 
-![moda_0](https://github.com/user-attachments/assets/c4038607-5fcd-4c77-9d69-bd6b83512904)
+![moda_0](https://github.com/user-attachments/assets/89caf80c-b83a-4527-8268-8e64c54b1af5)
 
 df nulos excluídos
 
-![moda_sem_nulos](https://github.com/user-attachments/assets/77c8c3db-2a73-477b-83db-caa688d1fee4)
+![moda_sem_nulos](https://github.com/user-attachments/assets/edbc6304-9771-4211-8f28-87ece0ec78a0)
 
 df nulos= mediana
 
-![moda_med](https://github.com/user-attachments/assets/f18539f0-bc03-4232-8755-9d7108ff8912)
+![moda_med](https://github.com/user-attachments/assets/33ea0c0e-3dbf-4980-94de-65a312150c44)
+
 
 Podemos observar que ao substituir nulos=0 a moda é igual a zero, mostrando que o valor distorce as métricas significativamente. 
 
-
 MEDIANA
+
 A mediana é uma medida de tendência central que representa o valor que divide um conjunto de dados em duas partes iguais. Em outras palavras, é o valor que está no meio de um conjunto de dados ordenados.
 
 Mediana total de números ímpar= é o valor que está na posição central, dividindo ao meio. 
@@ -152,7 +153,8 @@ df com nulos = mediana
 
 O desvio padrão maior no dataframe de nulos =0 indica maior dispersão dos dados em relação à media, ou seja maior variabilidade dos valores observados. 
 
-Conclusão
+Conclusão sobre as métricas 
+
 Em resumo, os dados indicam que o desempenho dos estudantes é mais heterogêneo na disciplina de Redação, com maior amplitude. Possuindo maior desvio padrão em todas as análises sugere notas extremas e possíveis outliers.
 Matemática e Redação apresentam médias e medianas mais elevadas em comparação às demais áreas. Isso pode sugerir, por exemplo, que um curso preparatório para o ENEM  precisa investir mais nas demais disciplinas para que os candidatos melhorem seu desempenho. 
 Em relação a melhor maneira de usar os nulos depende do entendimento desse valor. Se realmente representa nota 0 no exame, o ideal é substituir por zero. Caso seja ausência por não ter o dado da nota daquele aluno, a melhor forma seria usando a mediana que apresenta menor distorção dos dados com menor desvio padrão. 
@@ -163,11 +165,14 @@ Em relação a melhor maneira de usar os nulos depende do entendimento desse val
 
 Calculando a média ponderada de todas as disciplinas foi possível verificar a classificação para entrada em determinado curso (no caso, Ciências de Computação). Foi feito o cálculo da média ponderada para as três situações, nulos=0 , nulos excluídos e nulos=mediana e foi verificada uma diferença entre valores o que espelhou na classificação dos candidatos. Também foi realizado o cálculo da média geral e desvio padrão levando em consideração a média ponderada para comparar os valores. Temos, portanto 3 listagens de classificados dos 500 melhores. No primeiro caso temos 233 mulheres e 244 homens, para nulos excluídos temos 221 mulheres e 258 homens e no último caso 253 mulheres e 226 homens. Lembrando que não soma 500 pois temos candidatos sem a informação de gênero, estando como "Não identificado" no campo. Em todos, a primeira classificada é uma mulher. 
 
-média geral
+Média geral
+
 ![media_geral_500](https://github.com/user-attachments/assets/1c6a59c7-2fd0-4382-a1d0-7c80cbe19f37)
 
-média geral
+Desvio padrão geral
+
 ![desvio_geral_500](https://github.com/user-attachments/assets/0f8a6ebb-2f6c-4a4a-b993-8342f89564ba)
+
 
 A maior média geral é do df com nulos = mediana pois o df com nulos = 0 os valores com zero puxam a média geral para baixo. O maior desvio padrão, que mais distorce os dados, é do dataframe com nulos excluídos. 
 
@@ -178,11 +183,13 @@ Qual dessas classificações devemos levar em conta ? depende de como vamos cons
 A partir do dataframe dos 500 melhores foram selecionados os 40 primeiros e depois calculado a média e variância da média ponderada desses 40 primeiros classificados. 
 
 VARIÂNCIA
+
 A variância é uma medida estatística que indica o grau de dispersão ou espalhamento de um conjunto de dados em relação à sua média. Em outras palavras, a variância mede o quanto os valores individuais se desviam da média.
 
 Variância = soma (valores individuais - média) ² / número total de valores
 
 df com nulos = 0
+
 ![var_0](https://github.com/user-attachments/assets/de477252-1e31-4dfd-9156-a2c8e32ade4e)
 
 
@@ -200,26 +207,38 @@ Q4- É o valor máximo do conjunto de dados, ou seja, 100%.
 Aqui o cálculo dos quartis serviu para identificar outliers. 
 
 OUTLIERS
+
 Outliers são valores que estão fora do padrão esperado para o conjunto de dados. Eles se distanciam consideravelmente da média ou mediana do conjunto, sendo muito maiores ou menores. 
 
 Para tanto foram calculados o limite inferior e superior (ou teto) para identificação dos outliers. 
 
 Foram calculados os outliers das disciplinas de redação e ciências da natureza.
 
+
 HISTOGRAMAS
+
 Histogramas são gráficos que representam a distribuição de frequência de uma variável numérica contínua. 
 
 df com nulos =0
+
 ![hist1_red_0](https://github.com/user-attachments/assets/0049d3de-2d6d-4a2d-97a8-5a4bd46527ce)
 
 df com nulos excluídos
+
 ![hist2_red_sem_nulos](https://github.com/user-attachments/assets/2d7da772-734f-4eba-81d3-753eae9ab928)
 
 df com nulos= mediana
+
 ![hist3_red_med](https://github.com/user-attachments/assets/fb93e990-b4ce-45f7-bb9b-05248ef7945b)
 
 
+O primeiro histograma apresenta distribuição muito assimétrica à direita, com a maioria das notas concentradas entre 0 e 200.
+Muitas notas baixas, provavelmente devido à substituição dos valores nulos por 0. O segundo já apresenta uma distribuição mais simétrica, com uma curva de distribuição mais próxima de uma normal, com maioria das notas concentrada entre 400 e 600. Já o último possui uma distribuição mais próxima de uma curva normal, com maior dispersão.A maioria das notas estão entre 500 e 800, com uma cauda à esquerda mais longa.
+
+A escolha do método de tratamento dos valores nulos impacta significativamente a análise da distribuição das notas. A substituição pela mediana parece ser a abordagem que menos distorce a distribuição. 
+
 BOXPLOTS
+
 Boxplots, também conhecidos como diagramas de caixa, são uma representação gráfica que resume visualmente a distribuição de um conjunto de dados numéricos. Eles fornecem informações importantes sobre a localização, dispersão e simetria dos dados.
 
 - A caixa representa o intervalo entre o primeiro quartil (Q1) e o terceiro quartil (Q3), também conhecido como intervalo interquartílico (IQR).
@@ -242,4 +261,14 @@ df com nulos= mediana
 
 A mediana da disciplina de Ciências da Natureza é mais alta do que a mediana da disciplina de Redação.Há alguns outliers em ambas as disciplinas, indicando a presença de valores extremos. Há menos outliers no dataframe com nulos excluídos, indicando que alguns dos valores extremos provavelmente continha nulos. E no dataframe com nulos substituídos pela mediana há menos outliers em comparação com o primeiro boxplot, mas mais do que no segundo boxplot.A caixa do boxplot para Ciências da Natureza é maior, sugerindo uma maior variabilidade nos dados dessa disciplina.
 
+Conclusão geral:
 
+A análise exploratória dos dados revelou que o tratamento dos valores nulos tem um impacto significativo nas métricas estatísticas calculadas, como média, mediana, moda, desvio padrão e amplitude.
+
+Ao substituir os valores nulos por 0, observou-se uma forte distorção das métricas, com a média e moda sendo puxadas para baixo. Já ao excluir os valores nulos, obteve-se uma visão mais realista da distribuição, porém com possível perda de informações importantes. A substituição dos nulos pela mediana mostrou-se a abordagem mais adequada, pois preservou melhor a estrutura dos dados sem distorcer excessivamente as análises. Porém é importante entender a origem e contexto da coleta desses dados para entender se as notas nulas realmente são notas que não se sabe o valor ou se se tratam de faltosos ou candidatos que não obtiveram pontuação, nesse caso o mais realista seria usar a abordagem de substituição de nulos por zero. 
+
+As disciplinas de Matemática e Redação apresentaram médias, medianas e amplitudes mais elevadas em comparação às demais áreas, sugerindo um melhor desempenho geral dos candidatos nessas matérias. O desvio padrão mais alto na disciplina de Redação indica uma maior heterogeneidade nas notas, com possíveis outliers.
+
+Esses cálculos e análises iniciais fornecem uma base importante para responder perguntas mais específicas, como a classificação dos melhores candidatos para um determinado curso, a comparação de desempenho por gênero e a identificação de padrões e tendências nos dados do ENEM.
+
+Concluindo, o tratamento adequado dos valores nulos e a compreensão das métricas estatísticas são fundamentais para uma análise robusta e confiável dos dados educacionais, permitindo tirar insights relevantes e embasar tomadas de decisão.
